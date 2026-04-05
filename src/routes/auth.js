@@ -2,6 +2,9 @@ const express = require('express');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 
+// madina qildi
+
+
 const { createUser, findByEmail } = require('../models/user');
 const {
   validateRegisterInput,
