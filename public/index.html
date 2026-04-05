@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Madinaga Auth</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <p class="eyebrow">Team Authentication Project</p>
+      <h1>Login flow for a team-based GitHub coursework app.</h1>
+      <p class="hero-copy">
+        Front-end and back-end are connected through Express APIs for registration,
+        sign in, and password recovery.
+      </p>
+      <div class="hero-points">
+        <span>Express API</span>
+        <span>JSON storage</span>
+        <span>JWT session</span>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="tabs">
+        <button class="tab is-active" data-tab="login">Login</button>
+        <button class="tab" data-tab="register">Register</button>
+      </div>
+
+      <div id="alert" class="alert"></div>
+
+      <form id="loginForm" class="form" novalidate>
+        <label>
+          <span>Email</span>
+          <input type="email" id="loginEmail" placeholder="team@example.com" />
+        </label>
+        <label>
+          <span>Password</span>
+          <input type="password" id="loginPassword" placeholder="Enter password" />
+        </label>
+        <button type="submit" class="btn">Login</button>
+        <a class="inline-link" href="/forgot-password.html">Forgot password?</a>
+      </form>
+
+      <section class="demo-accounts">
+        <p class="demo-title">Demo accounts</p>
+        <button
+          type="button"
+          class="demo-account"
+          data-email="owner@madinaga.demo"
+          data-password="owner123"
+        >
+          <strong>Project Owner</strong>
+          <span>owner@madinaga.demo</span>
+          <span>Password: owner123</span>
+        </button>
+        <button
+          type="button"
+          class="demo-account"
+          data-email="collab1@madinaga.demo"
+          data-password="collab123"
+        >
+          <strong>Collaborator One</strong>
+          <span>collab1@madinaga.demo</span>
+          <span>Password: collab123</span>
+        </button>
+        <button
+          type="button"
+          class="demo-account"
+          data-email="collab2@madinaga.demo"
+          data-password="review123"
+        >
+          <strong>Collaborator Two</strong>
+          <span>collab2@madinaga.demo</span>
+          <span>Password: review123</span>
+        </button>
+      </section>
+
+      <form id="registerForm" class="form hidden" novalidate>
+        <label>
+          <span>Full name</span>
+          <input type="text" id="registerName" placeholder="Project Owner" />
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" id="registerEmail" placeholder="owner@example.com" />
+        </label>
+        <label>
+          <span>Password</span>
+          <input type="password" id="registerPassword" placeholder="At least 6 characters" />
+        </label>
+        <button type="submit" class="btn">Create account</button>
+      </form>
+
+      <section id="sessionBox" class="session hidden"></section>
+    </section>
+  </main>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>
