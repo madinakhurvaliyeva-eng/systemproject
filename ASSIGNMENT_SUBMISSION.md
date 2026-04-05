@@ -12,11 +12,11 @@ Use these accounts for the app demo:
 
 ## Repository Details
 
-- Repo URL: `https://github.com/<your-org-or-username>/madinaga`
+- Repo URL: `https://github.com/madinakhurvaliyeva-eng/systemproject`
 - Visibility: `Public`
-- Project Owner GitHub username: `@owner-username`
-- Collaborator 1 GitHub username: `@collab-one-username`
-- Collaborator 2 GitHub username: `@collab-two-username`
+- Project Owner: owner@madinaga.demo / owner123
+- Collaborator One: collab1@madinaga.demo / collab123
+- Collaborator Two: collab2@madinaga.demo / review123
 
 ## Project Board
 
